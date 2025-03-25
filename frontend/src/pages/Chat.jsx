@@ -59,7 +59,7 @@ const Chat = () => {
     
     try {
       // Send request to backend
-      const response = await fetch('http://localhost:3001/ask', {
+      const response = await fetch('https://docbot-server.onrender.com/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -189,5 +189,5 @@ def load_and_split_pdf(pdf_paths):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3000, debug=True)
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 3000)), debug=True)
 

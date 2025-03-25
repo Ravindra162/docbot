@@ -41,7 +41,7 @@ const Home = () => {
       // Set loading state
       setIsLoading(true);
 
-      const response = await fetch('http://localhost:3001/upload_pdfs', {
+      const response = await fetch('https://docbot-server.onrender.com/upload_pdfs', {
         method: 'POST',
         body: formData,
       });
